@@ -1,0 +1,22 @@
+{
+  "name": "npm-test-project",
+  "version": "0.0.1",
+  "description": "Dummy project that imports dummy packages",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hector-gomez/npm-test-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hector-gomez/npm-test-project/issues"
+  },
+  "homepage": "https://github.com/hector-gomez/npm-test-project#readme",
+  "dependencies": {
+    "npm-test-package-a": "github:hector-gomez/npm-test-package-a#semver:1.0.0"
+  }
+}
