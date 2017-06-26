@@ -1,5 +1,6 @@
 # Sample project
-This dummy project serves as an example for a potential npm 5 bug (npm version 5.0.3).
+This dummy project serves as an example for a potential npm 5 bug (npm version 5.0.3)
+reported [here](https://github.com/npm/npm/issues/17405).
 
 This project has a dependency on Package A.
 
@@ -37,7 +38,7 @@ npm-test-project@0.0.1 /gh/npm-test-project
 npm ERR! invalid: npm-test-package-a@1.0.0 /gh/npm-test-project/node_modules/npm-test-package-a
 ```
 
-It didn't warn us, and it did install Package A, but it didn't install it's dependencies
+It didn't warn us, and it did install Package A, but it didn't install its dependencies
 and therefore Package B is not available.
 
 ## Time for an experiment
@@ -50,7 +51,7 @@ $ npm install --no-save
 added 1 package in 1.051s
 ```
 
-Result: one package was addeed. Neat, which one? Well, it _did_ add Package B, but since it still
+Result: one package was added. Neat, which one? Well, it _did_ add Package B, but since it still
 considers Package A invalid it marks B as extraneous:
 
 ```
